@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive image slider</title>
+</head>
+<body>
+    <div class="home-container">
+        <div class="navbar">
+            <div class="navbar-logo"><i class="material-icons">language</i><p>Dammycodes-All</p></div>
+            <div class="navbar-list">
+                <ul>
+                    <li class="nav-item">Home</li>
+                    <li class="nav-item">About</li>
+                    <li class="nav-item">Contact</li>
+                    <li class="nav-item">Details</li>
+                </ul>
+                <i class="material-icons"> search </i>
+                <i class="material-icons"> person </i>
+            </div>
+        </div>
+        <div class="textarea textarea-l ">
+            <div class="title"><h1>NAGANO <br> PREFECTURE </h1></div>
+            <p>Nagano Prefecture is a mountainous region in central Japan, famous for its stunning nature, historic castles, and winter sports. It hosted the 1998 Winter Olympics and is known for hot springs, hiking trails, and traditional villages.</p>
+            <br><div class="cta-panel"><i class="material-icons star">star</i><button class="cta">BOOK JOURNEY</button></div><br>
+        </div>
+        <div class="textarea hidden">
+            <div class="title"><h1>LOS LANCES <br> BEACH </h1></div>
+            <p>A wide sandy beach located in Tarifa, Spain, in the province of Cádiz, Andalusia. It stretches for about 7.25 km (4.5 miles) along the Atlantic coast and is famous for its golden sand, strong winds, and crystal-clear waters.</p>
+            <br><div class="cta-panel"><i class="material-icons star">star</i><button class="cta">BOOK JOURNEY</button></div><br>
+        </div>
+        <div class="textarea hidden">
+            <div class="title"><h1>YOSEMITE<br> NATIONAL PARK</h1></div>
+            <p>the most famous national parks in the United States, located in California. It covers about 3,027 km² (1,169 square miles) and is known for its granite cliffs, waterfalls, giant sequoia trees, and diverse wildlife.</p>
+            <br><div class="cta-panel"><i class="material-icons star">star</i><button class="cta">BOOK JOURNEY</button></div><br>
+        </div>
+        <div class="textarea hidden">
+            <div class="title"><h1>MARRAKECH<br> MEROUGA</h1></div>
+            <p>Marrakech is one of Morocco’s most famous cities, known as the "Red City" due to its red sandstone buildings. It is a vibrant cultural hub filled with historic palaces, lively markets, and stunning gardens. </p>
+            <br><div class="cta-panel"><i class="material-icons star">star</i><button class="cta">BOOK JOURNEY</button></div><br>
+        </div>
+        <div class="textarea hidden">
+            <div class="title"><h1>SAINT<br> ANTONIN</h1></div>
+            <p>Located in the Tarn-et-Garonne department of southern France, Saint-Antonin-Noble-Val is a picturesque medieval town known for its historic architecture, outdoor activities, and beautiful natural surroundings. </p>
+            <br><div class="cta-panel"><i class="material-icons star">star</i><button class="cta">BOOK JOURNEY</button></div><br>
+        </div>
+        <div class="imgside">
+            <div class="img-card-box ">
+                <div class="card card-1" id="1">
+                    <p class="location"> Best beach in Spain</p>
+                     <h2>LOS LANCES<br>BEACH</h2> 
+                </div>
+                <div class="card card-2"  id="2">
+                    <p class="location "> Sierra nevada mountains</p>
+                     <h2>YOSEMITE <br> NATIONAL PARK</h2> 
+                </div>
+                <div class="card card-3" id="3">
+                    <p class="location "> Marrakech (مراكش) </p>
+                     <h2>MARRAKECH<br> MEROUGA</h2> 
+                </div>
+                <div class="card card-4" id="4">
+                    <p class="location"> Tarn-et-Garonne</p>
+                     <h2>SAINT <br> ANTONIN</h2> '''
+                </div>
+                <div class="card card-5" id="0" >
+                    <p class="location"> Tarn-et-Garonne</p>
+                     <h2>NAGANO<br> PREFECTURE</h2> '
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <i class="material-icons arrows" id="prev">chevron_left</i>
+            <i class="material-icons arrows" id="next">chevron_right</i>
+            <div class="loader">
+                <div class="loader-progress"></div> <!-- Adjust width for percentage -->
+            </div>
+            <p class="load-no">1</p>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="script.js "></script>
+</body>
+</html>

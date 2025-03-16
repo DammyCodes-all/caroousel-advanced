@@ -1,0 +1,292 @@
+body{
+    font-family: "PT Sans", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav bar section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    color: #e8e7e7;
+    grid-column: span 2;
+    height: fit-content;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.navbar-logo{
+    display: flex;
+    gap: 2px;
+    position: relative;
+    left: 10px;
+    align-items: center;
+}
+.navbar-list{
+    display: flex;
+    gap: 15px;
+    position: relative;
+    right: 20px;
+    font-size:medium;
+}
+.navbar-list ul{
+    display: flex;
+    gap: 15px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    flex-direction: row;
+    cursor: pointer;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e8e7e7;
+    transition: all 0.15s ease-in-out;
+  }
+.nav-item:hover::after {
+   width: 100%;
+   transform: translateX(-50%);
+}
+li{
+    list-style: none;
+}
+.navbar-list i{
+    cursor: pointer;
+}
+.home-container{
+    display: grid;
+    grid-template-rows: 5% 85% 5%;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+    gap: 10px;
+    height: 100vh;
+    background: url(images/5d91a2bf632d6208768d10ec7ca26dfe.jpg) no-repeat center center/cover;
+    padding: 10px;
+}
+.textarea , .imgside{
+    width: 100%;
+    height:100%;
+}
+
+.textarea{
+    color: #f0f0f0;
+    display: flex;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+    gap: 10px;
+    grid-row: span 2;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    font-size: x-large;
+    color: #f0f0f0;
+    font-family: "Raleway", sans-serif;
+}
+.textarea p{
+    color: #ccc;
+    width: 70%;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.star{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: gold;
+}
+.cta-panel{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.cta{
+    background: none;
+    height: 30px;
+    width: fit-content;
+    padding-right: 7px;
+    padding-left: 7px;
+    border: 1px solid #e8e7e7;
+    text-align: center;
+    color: #e8e7e7;
+    border-radius: 5px;
+    transition: all ease-in-out 0.2s;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+}
+.cta:hover{
+    background-color: #e8e7e7;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.imgside{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.card{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 3px;
+    cursor: pointer;
+    flex-shrink:  0;
+    height: 270px;
+    padding: 5px;
+    border-radius: 2%;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card:hover{
+    transform: scale(0.95);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); 
+}
+.card > *{
+    position: relative;
+    bottom: 20px;
+}
+.card h2{
+    color: #e8e7e7;
+    font-size: large;
+    font-family: "Raleway" , sans-serif;
+}
+.location{
+    width: 90%;
+    color: #e6e6e6;
+    font-size: small;
+}
+.img-card-box{
+    display: flex;
+    transition: 0.5s all ease;
+    gap: 10px;
+    min-width: 678px;
+    overflow: hidden;
+}
+
+.card-1{
+    background: url(images/beachlandscape.jpg) no-repeat center center/cover;
+}
+.card-2{
+    background: url(images/Gonome\ valley.jpg) no-repeat center center/cover;
+}
+.card-3{
+    background: url(images/Japan\ scape.jpg) no-repeat center center/cover;
+}
+.card-4{
+    background: url(images/tree\ scape.jpg) no-repeat center center/cover;
+}
+.card-5{
+    background: url(images/5d91a2bf632d6208768d10ec7ca26dfe.jpg) no-repeat center center/cover;
+}
+.controls{
+    display: flex;
+    gap: 10px;
+    color: #e0e0e0;
+    justify-content: center;
+    align-items: center;
+}
+.arrows{
+    color: #e6e6e6;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid #e6e6e6;
+}
+.arrows:hover{
+    color: black;
+    background-color: #e0e0e0;
+}
+.loader {
+    width: 90%; /* Full width of the container */
+    height: 2px; /* Height of the loader */
+    background-color: #e0e0e0; /* Background color of the loader */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+}
+
+.loader-progress {
+    height: 100%;
+    width: 16.67%;
+    z-index: 1;
+    box-shadow: 0 0 15px 10px gold, 
+    0 0 40px 20px rgba(255, 215, 0, 0.9), 
+    0 0 60px 30px rgba(255, 215, 0, 0.7);
+    background-color: gold; /* Color of the progress bar */
+    border-radius: 5px; /* Rounded corners */
+    transition: width 0.5s ease; /* Smooth transition for width changes */
+}
+.load-no{
+    color: #e0e0e0;
+    font-size: large;
+}
+.hidden{
+    display: none;
+}
+
+/* Text animation classes */
+.title h1 {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.textarea p {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.cta-panel {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Animation classes */
+.animate-title {
+    animation: fadeUp 0.1s ease forwards;
+}
+
+.animate-text {
+    animation: fadeUp 0.3s ease forwards 0.3s;
+}
+
+.animate-cta {
+    animation: fadeUp 0.34s ease forwards 0.6s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
