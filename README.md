@@ -5,7 +5,6 @@ A smooth and interactive image carousel with animated text transitions, progress
 ## Features
 
 - 🖼️ Smooth image transitions
-- 📱 No Responsive design
 - ✨ Animated text content
 - 🎯 Progress indicator
 - 🔄 Auto-sliding functionality
@@ -21,7 +20,7 @@ A smooth and interactive image carousel with animated text transitions, progress
 
 ## Live Demo
 
-[View Demo](https://dammycodes-all.github.io/caroousel-advanced/)
+[View Demo](https://carousel-advanced.vercel.app/)
 
 ## Setup
 
